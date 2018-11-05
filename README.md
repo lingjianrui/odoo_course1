@@ -14,8 +14,10 @@
 ![image](https://github.com/lingjianrui/odoo_course1/raw/master/screenshots/快速创建企业门户.gif)
               
 ### 模块化安装及丰富的已有的模块 & 强大的线上商店
+![image](https://github.com/lingjianrui/odoo_course1/raw/master/screenshots/丰富的应用.gif)
 
 ### 多用户权限控制
+![image](https://github.com/lingjianrui/odoo_course1/raw/master/screenshots/多用户权限.gif)
 
 # Installation
 ## 源码安装
