@@ -1,10 +1,10 @@
 
 # What is Odoo? and Why?
-1.Odoo 是一个模块化的 Erp 系统 功能很强大
-2.Odoo Community Edition是开源的 Enterprise Edition 是收费的。(遗憾的是 他是 GPL 的)
-3.成熟的社区资源和app store，可以下载很多收费和免费的应用。
-4.使用python语言, postgresql数据库 开发快 上手容易，系统稳定。
-5.支持docker快速部署 源码部署，和数据库管理工具
+1. Odoo 是一个模块化的 Erp 系统 功能很强大
+2. Odoo Community Edition是开源的 Enterprise Edition 是收费的。(遗憾的是 他是 GPL 的)
+3. 成熟的社区资源和app store，可以下载很多收费和免费的应用。
+4. 使用python语言, postgresql数据库 开发快 上手容易，系统稳定。
+5. 支持docker快速部署 源码部署，和数据库管理工具
 
 
 
@@ -24,13 +24,13 @@
 -u 指定要更新的模块 这里的更新 仅仅指 xml 的更新，如果改了 python 代码 仍然需要重启odoo 才可以。
 ##Docker安装
 以下是一些常用的启动方式，并不需要按顺序执行
-1.启动postgresql数据库
+1. 启动postgresql数据库
 ` $ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres:9.4`
-2.启动odoo
+2. 启动odoo
 ` $ docker run -p 8069:8069 --name odoo --link db:db -t odoo `
-3.启动odoo 挂在插件
+3. 启动odoo 挂在插件
 ` docker run -v /path/to/addons:/mnt/extra-addons -p 8069:8069 --name odoo --link db:db -t odoo `
-4.启动挂在数据库
+4. 启动挂在数据库
 ``` 
 docker run -v /opt/my-addons:/mnt/extra-addons -v /var/www/testing:/opt/testing -v /var/lib/docker/volumes/324bfe0bde851f542bd72047cdcd7922510c3da7c4bcc409ace6cb8d54dcfc67/_data:/var/lib/odoo -v /data/csmp_release/latest:/opt/latest -p 8070:8069 --name odoo1 --link db:db -t odoo:v10
 ```
