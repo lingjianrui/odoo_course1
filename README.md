@@ -22,7 +22,7 @@
 --addons-path   指定要加载的模块的路径 addons 是odoo 官方提供的模块, mymodules是 自定义的模块 可以在系统的任何位置
 -d 指定数据库
 -u 指定要更新的模块 这里的更新 仅仅指 xml 的更新，如果改了 python 代码 仍然需要重启odoo 才可以。
-##Docker安装
+## Docker安装
 以下是一些常用的启动方式，并不需要按顺序执行
 1. 启动postgresql数据库
 ` $ docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo --name db postgres:9.4`
