@@ -62,6 +62,7 @@ __manifest__.py 内容如下
 ## simple_module_ii
 增加模型, 视图, 菜单 , 菜单窗口
 **Add model , view and menu**
+```
 ├── simple_module_ii
 │   ├── *__init__.py*
 │   ├── *__manifest__.py*
@@ -70,7 +71,7 @@ __manifest__.py 内容如下
 │   │   └── description
 │   │       └── icon.png
 │   └── view.xml
-
+```
 为了给应用增加一个图标,不得不创建一个static目录，在将图标文件放到description文件夹中
 odoo 会默认读取这个文件 并将它展示在 应用管理的列表中
 
@@ -118,7 +119,7 @@ view.xml
 ```
 ## simple_module_iii
 继承式开发 和 权限基本设置
-
+```
 simple_module_iii
 ├── *__init__.py*
 ├── *__manifest__.py*
@@ -129,6 +130,7 @@ simple_module_iii
 │   └── description
 │       └── icon.png
 └── view.xml
+```
 **1.继承式开发**
 开发一个新的模块来拓展老的模块，simple_module_iii 依赖simple_module_ii 并在ii的基础上为表单增加了一个字段。
 
