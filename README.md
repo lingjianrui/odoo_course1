@@ -10,6 +10,8 @@
 ## Demo
 ### website快速构建企业门户
 
+        ![image](https://github.com/lingjianrui/odoo_course1/raw/master/screenshots/快速创建企业门户.gif
+              
 ### 模块化安装及丰富的已有的模块
 
 ### 强大的线上商店
