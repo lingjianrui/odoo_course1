@@ -1,3 +1,4 @@
+[TOC]
 
 # What is Odoo? and Why?
 1. Odoo 是一个模块化的 Erp 系统 功能很强大
