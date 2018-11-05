@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--表单视图定义  id只能包含一个 .  最好不要带 .  name 只用作页面上的展示-->
+    <record id="simple_module_ii_student_form" model="ir.ui.view">
+        <field name="name">simple_module_ii.student.form</field>
+        <field name="model">simple_module_ii.student</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="name"/>
+                    <field name="stu_no"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <!--列表视图定义-->
+     <record id="simple_module_ii_student_tree" model="ir.ui.view">
+        <field name="name">simple_module_ii.student.tree</field>
+        <field name="model">simple_module_ii.student</field>
+        <field name="arch" type="xml">
+           <tree>
+               <field name="name"/>
+               <field name="stu_no"/>
+           </tree>
+        </field>
+    </record>
+    <!--模块图标定义-->
+    <menuitem id="simple_module_ii_menu" name="模块简单教程II" sequence="10" web_icon="simple_module_ii,static/description/icon.png"/>
+    <!--菜单动作定义 注意 菜单要引用菜单动作，所以 菜单动作先定义  这个name 是打开窗口的名字-->
+    <record model="ir.actions.act_window" id="action_simple_module_ii_menu1">
+        <field name="name">模块简单教程学生窗口</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">simple_module_ii.student</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!--菜单定义-->
+    <menuitem id="simple_module_ii_menu1" name="学生" sequence="10" parent="simple_module_ii_menu" action="action_simple_module_ii_menu1"/>
+</odoo>

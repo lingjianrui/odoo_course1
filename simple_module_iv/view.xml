@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+   <record model="ir.ui.view" id="simple_module_iv_inherit">
+            <field name="name">simple_module_iv_inherit</field>
+            <field name="model">simple_module_ii.student</field>
+            <field name="inherit_id" ref="simple_module_ii.simple_module_ii_student_form" />
+            <field name="arch" type="xml">
+                <xpath expr="/form/*" position="before">
+                    <header>
+                        <h1>hi</h1>
+                    </header>
+                </xpath>
+               <field name="name" position="after">
+                   <field name="state"/>
+               </field>
+                <button string="我的按钮" type="object" name="action_publish" class="oe_highlight" attrs="{'invisible':[('state', '==', 'published')]}"/>
+            </field>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+   <record model="ir.ui.view" id="simple_module_iii_inherit">
+            <field name="name">simple_module_iii_inherit</field>
+            <field name="model">simple_module_ii.student</field>
+            <field name="inherit_id" ref="simple_module_ii.simple_module_ii_student_form" />
+            <field name="arch" type="xml">
+               <field name="name" position="after">
+                 <field name="test"/>
+               </field>
+            </field>
+    </record>
+</odoo>
