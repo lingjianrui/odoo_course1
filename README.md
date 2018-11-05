@@ -38,9 +38,11 @@ docker run -v /opt/my-addons:/mnt/extra-addons -v /var/www/testing:/opt/testing 
 # QuickStart
 ## simple_module
 只需要两个文件就可以被odoo的模块发现机制发现
+```
 ├── simple_module
 │   ├── *__init__.py*     
 │   └── *__manifest__.py*
+```
 ```
 __init__.py  内容为空
 __manifest__.py 内容如下
